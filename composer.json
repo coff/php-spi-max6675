@@ -1,0 +1,27 @@
+{
+  "name": "coff/php-spi-max6675",
+  "description": "MAX6675 thermocouple controller communication library over SPI",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Krzysztof Kubanek",
+      "email": "krzysztof.kubanek@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Coff\\Max6675\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/coff/php-api-datasource.git"
+    }
+  ],
+  "require": {
+    "coff/php-api-datasource": "^0.0.3",
+    "ext-spi": "*"
+  }
+}
