@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c801a6c8814ec89ecf2fb451acc2ae5e",
-    "content-hash": "ecdf1ec97ed6ab905de54440d50bbf2d",
+    "hash": "c3fcf560618ebc11c05b2ef595678c58",
+    "content-hash": "e2a30375a71b17d70b1ef89dd233afb8",
     "packages": [
         {
             "name": "coff/php-api-datasource",
-            "version": "v0.0.3",
+            "version": "v0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coff/php-api-datasource.git",
-                "reference": "e65f5126a4295126527fc73fee6de3b2bbc061e4"
+                "reference": "337001a5f4e3b8891d37507be261514a0e632f75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coff/php-api-datasource/zipball/e65f5126a4295126527fc73fee6de3b2bbc061e4",
-                "reference": "e65f5126a4295126527fc73fee6de3b2bbc061e4",
+                "url": "https://api.github.com/repos/coff/php-api-datasource/zipball/337001a5f4e3b8891d37507be261514a0e632f75",
+                "reference": "337001a5f4e3b8891d37507be261514a0e632f75",
                 "shasum": ""
             },
             "type": "library",
@@ -38,10 +38,10 @@
             ],
             "description": "API package for DataSource class",
             "support": {
-                "source": "https://github.com/coff/php-api-datasource/tree/v0.0.3",
+                "source": "https://github.com/coff/php-api-datasource/tree/v0.0.4",
                 "issues": "https://github.com/coff/php-api-datasource/issues"
             },
-            "time": "2017-02-09 23:11:12"
+            "time": "2017-02-19 23:01:04"
         }
     ],
     "packages-dev": [],
