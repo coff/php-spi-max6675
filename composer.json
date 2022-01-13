@@ -22,6 +22,6 @@
   ],
   "require": {
     "coff/php-api-datasource": "~0.0.4",
-    "ext-spi": "*"
+    "volantus/php-pigpio": "^0.3.0"
   }
 }

@@ -2,8 +2,10 @@
 
 namespace Coff\Max6675;
 
+use Coff\DataSource\DataSource;
 use Coff\DataSource\Exception\DataSourceException;
-use Coff\DataSource\SpiDataSource;
+use Volantus\Pigpio\Client;
+use Volantus\Pigpio\SPI\SpiDevice;
 
 /**
  * Max6675Sensor
@@ -20,36 +22,40 @@ use Coff\DataSource\SpiDataSource;
  * Spi interface tutorial:
  * http://www.corelis.com/education/SPI_Tutorial.htm
  */
-class Max6675DataSource extends SpiDataSource
+class Max6675DataSource extends DataSource
 {
-    protected $spi;
+    /** @var SpiDevice */
+    protected $spiDevice;
 
-    public function __construct($busNumber = 0, $cableSelect = 0, $speed = 4300000)
+    /** @var Client */
+    protected $client;
+
+    /**
+     * @param Client $client
+     * @return $this
+     */
+    public function setPigpioClient($client)
     {
-        parent::__construct($busNumber, $cableSelect, $speed);
+        $this->client = $client;
+
+        return $this;
     }
 
-    public function init()
+    /**
+     * Sets SPI device
+     * @param SpiDevice $spiDevice
+     * @return $this
+     */
+    public function setSpiDevice(SpiDevice $spiDevice)
     {
-        /**
-         * SPI library: https://github.com/frak/php_spi
-         */
-        $this->spi = new \Spi(
-            $this->busNumber, // bus number (always 0 on RPi)
-            $this->cableSelect, // chip select CS (0 or 1)
-            array (
-                'mode' => SPI_MODE_0,
-                'bits' => 8,
-                'speed' => $this->speed, // 4.3 kHz according to MAX7765 specs
-                'delay' => 16, // don't know really if this is set properly
-            )
-        );
+        $this->spiDevice = $spiDevice;
+
+        return $this;
     }
 
     public function update()
     {
-        /** expecting two bytes so we should sent it twice */
-        $res = $this->spi->transfer([1,1]);
+        $res = $this->spiDevice->crossTransfer([1,1]);
 
         /*
          * According to MAX6675 specs consequent bits contain

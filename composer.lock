@@ -1,11 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "c3fcf560618ebc11c05b2ef595678c58",
-    "content-hash": "e2a30375a71b17d70b1ef89dd233afb8",
+    "content-hash": "168c0e8f72ce59494b835e9c828fe210",
     "packages": [
         {
             "name": "coff/php-api-datasource",
@@ -41,7 +40,53 @@
                 "source": "https://github.com/coff/php-api-datasource/tree/v0.0.4",
                 "issues": "https://github.com/coff/php-api-datasource/issues"
             },
-            "time": "2017-02-19 23:01:04"
+            "time": "2017-02-19T23:01:04+00:00"
+        },
+        {
+            "name": "volantus/php-pigpio",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Volantus/php-pigpio.git",
+                "reference": "e9ea4db81a465391c706ac2ad72278bfc55a8dc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Volantus/php-pigpio/zipball/e9ea4db81a465391c706ac2ad72278bfc55a8dc4",
+                "reference": "e9ea4db81a465391c706ac2ad72278bfc55a8dc4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "doctrine/instantiator": "~1.0.5",
+                "phpunit/phpunit": "^6.5",
+                "symfony/filesystem": "~3.4.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Volantus\\Pigpio\\": "src",
+                    "Volantus\\Pigpio\\Tests\\": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Marius Meissner",
+                    "email": "marius.meissner@volantus.org"
+                }
+            ],
+            "description": "PHP client for the pigpio daemon library",
+            "support": {
+                "issues": "https://github.com/Volantus/php-pigpio/issues",
+                "source": "https://github.com/Volantus/php-pigpio/tree/master"
+            },
+            "time": "2018-06-22T13:50:10+00:00"
         }
     ],
     "packages-dev": [],
@@ -50,8 +95,7 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "ext-spi": "*"
-    },
-    "platform-dev": []
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
