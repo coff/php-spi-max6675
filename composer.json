@@ -17,11 +17,11 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/coff/php-api-datasource.git"
+      "url": "https://github.com/coff/php-datasource-interface.git"
     }
   ],
   "require": {
-    "coff/php-api-datasource": "~0.0.4",
+    "coff/php-datasource-interface": "0.1.*",
     "volantus/php-pigpio": "^0.3.0"
   }
 }

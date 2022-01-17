@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "168c0e8f72ce59494b835e9c828fe210",
+    "content-hash": "0e4e772a465554028f54e36390925de7",
     "packages": [
         {
-            "name": "coff/php-api-datasource",
-            "version": "v0.0.4",
+            "name": "coff/php-datasource-interface",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/coff/php-api-datasource.git",
-                "reference": "337001a5f4e3b8891d37507be261514a0e632f75"
+                "url": "https://github.com/coff/php-datasource-interface.git",
+                "reference": "c558b27c9ff6752ed4cf37f107403a9305facc0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coff/php-api-datasource/zipball/337001a5f4e3b8891d37507be261514a0e632f75",
-                "reference": "337001a5f4e3b8891d37507be261514a0e632f75",
+                "url": "https://api.github.com/repos/coff/php-datasource-interface/zipball/c558b27c9ff6752ed4cf37f107403a9305facc0e",
+                "reference": "c558b27c9ff6752ed4cf37f107403a9305facc0e",
                 "shasum": ""
             },
             "type": "library",
@@ -35,12 +35,12 @@
                     "email": "krzysztof.kubanek@gmail.com"
                 }
             ],
-            "description": "API package for DataSource class",
+            "description": "Interface package for DataSource class",
             "support": {
-                "source": "https://github.com/coff/php-api-datasource/tree/v0.0.4",
-                "issues": "https://github.com/coff/php-api-datasource/issues"
+                "source": "https://github.com/coff/php-datasource-interface/tree/v0.1.0",
+                "issues": "https://github.com/coff/php-datasource-interface/issues"
             },
-            "time": "2017-02-19T23:01:04+00:00"
+            "time": "2022-01-13T21:16:32+00:00"
         },
         {
             "name": "volantus/php-pigpio",
